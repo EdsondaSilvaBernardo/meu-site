@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+    <style>
+
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: rgb(240, 141, 105);
+        }
+
+        header {
+            background-color: rgb(54, 52, 52);
+            height: 70px;
+        }
+
+        li {
+            color: gray;
+            list-style: none;
+            display: inline-block;
+            font-size: 1.5em;
+            padding: 20px;
+        }
+
+        li:hover {
+            color: white;
+            transition: .5s;
+        }
+
+        h1 {
+            font-family: Arial, Helvetica, sans-serif;
+            padding: 40px;
+            font-size: 3em;
+            text-align: center;
+        }
+
+        main {
+            height: 650px;
+            display: flex;
+            justify-content: center;
+        }
+
+        #tamanho {
+            width: 600px;
+            height: 40px;
+            border-radius: 5px;
+        }
+
+        #tamanho-2 {
+            width: 200px;
+            height: 40px;
+            border-radius: 5px;
+        }
+
+        #tamanho-3 {
+            width: 100px;
+            height: 40px;
+            border-radius: 5px;
+
+        }
+
+        button {
+            background-color: rgb(54, 52, 52);
+            color: white;
+            height: 50px;
+            width: 100px;
+            margin-top: 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+
+        button:hover {
+            background-color:  rgb(69, 67, 68);
+            transition: .2s;
+        }
+
+        footer {
+            background-color: black;
+            color: white;
+            height: 60px;
+            font-weight: bold;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 38px;
+        }
+
+        @media(min-width: 480px){
+            #tamanho {
+                width: 300px;
+            }
+        }
+
+        @media(min-width: 768px){
+            #tamanho {
+                width: 600px;
+            }
+        }
+
+        @media(min-width: 1280px){
+            #tamanho {
+                width: 600px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <ul>
+            <a href="home.html" target="_blank">
+                <li>Home</li>
+            </a>
+            <a href="receitas.html" target="_blank">
+                <li>Receitas</li>
+            </a>
+            <a href="cadastro.html">
+                <li>Cadastro</li>
+            </a>
+        </ul>
+    </header>
+        <h1>Efetue seu Cadastro</h1>
+
+        <main>
+            <form action="cadastro.html">
+            
+                    <label for="name">Nome</label>
+                    <input style="display: block;" id="tamanho" type="name" name="name">
+                    <label for="email">E-mail</label>
+                    <input style="display: block;" id="tamanho" type="email" name="email">
+                    <label for="cep">CEP</label>
+                    <input style="display: block;" id="tamanho-2" type="cep" name="cep">
+                    <label for="rua">Rua</label>
+                    <input style="display: block;" id="tamanho" type="rua" name="rua">
+                    <label for="numero">Número</label>
+                    <input style="display: block;" id="tamanho-3" type="numero" name="numero">
+                    <label for="complemento">Complemento</label>
+                    <input style="display: block;" id="tamanho-2" type="complemento" name="complemento">
+                    <label for="cidade">Cidade</label>
+                    <input style="display: block;" id="tamanho" type="city" name="cidade">
+                    <label for="uf">UF</label>
+                    <input style="display: block;" id="tamanho-3" type="uf" name="uf">
+
+                    <button>Cadastrar</button>
+            </form>
+        </main>
+
+        <footer>&copy;Jurema 2022</footer>
+    
+</body>
+</html>

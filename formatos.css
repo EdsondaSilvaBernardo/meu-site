@@ -1,0 +1,52 @@
+* {
+    margin: 0;
+}
+
+
+body {
+    background-color: rgb(240, 141, 105);
+    background-image: url('logotipo/logotipo.png');
+    background-repeat: no-repeat;
+    background-position: 39.5% 20%;
+}
+
+header {
+    background-color: rgb(54, 52, 52);
+    height: 70px;
+}
+
+li {
+    color: gray;
+    list-style: none;
+    display: inline-block;
+    font-size: 1.5em;
+    padding: 20px;
+}
+
+li:hover {
+    color: white;
+    transition: .5s;
+}
+
+main {
+    height: 650px;
+    margin-top: 170px;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+footer {
+    background-color: #000;
+    color: #fff;
+    padding: 25px;
+    text-align: center;
+    font-weight: bold;
+}
